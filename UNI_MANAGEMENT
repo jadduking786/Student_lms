@@ -1,0 +1,269 @@
+# ============================================
+# Student Fee & Scholarship System
+# ============================================
+
+# --------------------------------------------
+# Step 1: Create Variables
+# --------------------------------------------
+
+student_name = "Ali"
+age = 21
+department = "Computer Science"
+semester = 7
+
+tuition_fee = 2000
+scholarship_amount = 500
+
+cgpa = 3.72
+is_enrolled = True
+
+
+# --------------------------------------------
+# Step 2: Create Constants
+# --------------------------------------------
+
+UNIVERSITY_NAME = "University of Baltistan"
+MIN_CGPA = 3.50
+MAX_COURSES = 6
+
+
+# --------------------------------------------
+# Step 3: Display Information
+# --------------------------------------------
+
+print("========== Student Information ==========")
+
+print("University :", UNIVERSITY_NAME)
+print("Student Name :", student_name)
+print("Age :", age)
+print("Department :", department)
+print("Semester :", semester)
+print("Tuition Fee : $", tuition_fee)
+print("Scholarship : $", scholarship_amount)
+print("CGPA :", cgpa)
+print("Enrolled :", is_enrolled)
+
+print()
+
+
+# --------------------------------------------
+# Step 4: Check Data Types
+# --------------------------------------------
+
+print("========== Data Types ==========")
+
+print(type(student_name))
+print(type(age))
+print(type(department))
+print(type(semester))
+print(type(tuition_fee))
+print(type(scholarship_amount))
+print(type(cgpa))
+print(type(is_enrolled))
+
+print()
+
+
+# --------------------------------------------
+# Step 5: Type Conversion
+# --------------------------------------------
+
+roll_number = "101"
+
+print("Before Conversion :", type(roll_number))
+
+roll_number = int(roll_number)
+
+print("After Conversion :", type(roll_number))
+
+print()
+
+
+# --------------------------------------------
+# Step 6: Arithmetic Operators
+# --------------------------------------------
+
+print("========== Arithmetic Operators ==========")
+
+payable_fee = tuition_fee - scholarship_amount
+
+print("Payable Fee :", payable_fee)
+
+print("Addition :", tuition_fee + scholarship_amount)
+
+print("Subtraction :", tuition_fee - scholarship_amount)
+
+print("Multiplication :", tuition_fee * 2)
+
+print("Division :", tuition_fee / 2)
+
+print("Floor Division :", tuition_fee // 2)
+
+print("Modulus :", tuition_fee % 3)
+
+print("Exponent :", tuition_fee ** 2)
+
+print()
+
+
+# --------------------------------------------
+# Step 7: Assignment Operators
+# --------------------------------------------
+
+print("========== Assignment Operators ==========")
+
+print("Original Scholarship :", scholarship_amount)
+
+scholarship_amount += 200
+
+print("After Adding Scholarship :", scholarship_amount)
+
+tuition_fee += 100
+
+print("After Increasing Fee :", tuition_fee)
+
+tuition_fee -= 50
+
+print("After Reducing Fee :", tuition_fee)
+
+print()
+
+
+# --------------------------------------------
+# Step 8: Comparison Operators
+# --------------------------------------------
+
+print("========== Comparison Operators ==========")
+
+print("CGPA >= Minimum CGPA :", cgpa >= MIN_CGPA)
+
+print("Age > 18 :", age > 18)
+
+print("Fee == Scholarship :", tuition_fee == scholarship_amount)
+
+print("Fee != Scholarship :", tuition_fee != scholarship_amount)
+
+print()
+
+
+# --------------------------------------------
+# Step 9: Logical Operators
+# --------------------------------------------
+
+print("========== Logical Operators ==========")
+
+eligible = (cgpa >= MIN_CGPA) and is_enrolled
+
+print("Scholarship Eligible :", eligible)
+
+print("Enrolled OR Age > 18 :", is_enrolled or age > 18)
+
+print("NOT Enrolled :", not is_enrolled)
+
+print()
+
+
+# --------------------------------------------
+# Step 10: Unary Operators
+# --------------------------------------------
+
+print("========== Unary Operators ==========")
+
+print("Positive Fee :", +tuition_fee)
+
+print("Negative Fee :", -tuition_fee)
+
+print("Reverse Enrollment Status :", not is_enrolled)
+
+print()
+
+
+# --------------------------------------------
+# Step 11: Ternary Operator
+# --------------------------------------------
+
+print("========== Ternary Operator ==========")
+
+status = "Scholarship Approved" if cgpa >= MIN_CGPA else "Scholarship Not Approved"
+
+print(status)
+
+print()
+
+
+# --------------------------------------------
+# Step 12: Operator Precedence
+# --------------------------------------------
+
+print("========== Operator Precedence ==========")
+
+result1 = 500 + 100 * 2
+
+result2 = (500 + 100) * 2
+
+result3 = 1000 / 2 + 50
+
+result4 = 1000 / (2 + 50)
+
+print(result1)
+
+print(result2)
+
+print(result3)
+
+print(result4)
+
+print()
+
+
+# --------------------------------------------
+# Step 13: Keywords
+# --------------------------------------------
+
+print("========== Python Keywords ==========")
+
+print("The following cannot be used as variable names:")
+print("class")
+print("if")
+print("return")
+
+print()
+
+print("Valid Variable Name:")
+student_name = "Ali"
+
+print(student_name)
+
+print()
+
+
+# --------------------------------------------
+# Final Student Report
+# --------------------------------------------
+
+print("========================================")
+print("          Student Report")
+print("========================================")
+
+print("University       :", UNIVERSITY_NAME)
+print("Student Name     :", student_name)
+print("Age              :", age)
+print("Department       :", department)
+print("Semester         :", semester)
+print("CGPA             :", cgpa)
+print("Enrolled         :", is_enrolled)
+
+print()
+
+print("Tuition Fee      : $", tuition_fee)
+print("Scholarship      : $", scholarship_amount)
+
+payable_fee = tuition_fee - scholarship_amount
+
+print("Payable Fee      : $", payable_fee)
+
+print()
+
+print("Scholarship Status :", status)
+
+print("========================================")
