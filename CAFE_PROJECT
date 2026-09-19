@@ -1,0 +1,35 @@
+menu={
+    'pizza': 400,
+    'burger':250,
+    'chips':100,
+    'sanwithch':150,
+    'cold_drink':200,
+    
+    
+}
+print("===<<WELCOME TO CODER RESTAURENT>>===")
+print('pizza = 400RS\nburger= 250RS\nchips= 100RS\nsanwitch= 150RS\ncold_drink= 200RS')
+order_total=0
+item1=input("enter your item")
+if item1 in menu:
+    order_total+=menu[item1]
+    print(f"the first item {item1} order sucessfully")
+else:
+    print(f" the {item1} is not in restaurent yet")
+    
+another_item=input('do you want to add another item (yes/no)')
+
+if another_item=="yes":
+     
+    item2=input("enter the name of another item")
+   
+    if item2 in menu:
+         order_total+=menu[item2]
+         print(f"the another item  {item2} also order sucessfully")
+    else:
+         print(f" the {item2} is not in restaurent yet")
+        
+print(f'the total amount is {order_total}RS')
+
+        
+    
