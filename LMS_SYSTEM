@@ -1,0 +1,145 @@
+class school:
+   
+    def display(self):
+        print("!====<<<school detail >>>====!")
+        print("the school name is ALI PUBLIC SCHOOL")
+        print("the contact number is 03488005157")
+        print("it is located by clifton pull skardu ") 
+        print("the school has 1000+ students")
+        print("and also has 100+ staff")
+        
+class student(school):
+    def __init__(self): 
+        pass
+        
+    def display1(self,st_name,st_fathername,st_permanentaddress,st_residencialaddress,st_class,st_marks,st_position): 
+        self.st_name=st_name
+        self.st_fathername=st_fathername
+        self.st_permanentaddress=st_permanentaddress
+        self.st_residencialaddress=st_residencialaddress
+        self.st_class=st_class
+        self.st_marks=st_marks
+        self.st_positon=st_position
+      
+        print("...................................................................")
+        print("...................................................................")
+        print("...................................................................")
+        print(">>>>(((student details)))>>>>")
+        print(f"the student name is {self.st_name}")
+        print(f"father name is {self.st_fathername}")
+        print(f"the permanent address is  {self.st_permanentaddress}")
+        print(f"the residentcial address is  {self.st_residencialaddress}")
+        print(f"the student read class {self.st_class}")
+        print(f"the marks is {self.st_marks}")
+        
+        if self.st_marks>=490:
+            print("PERCENTAGE 90+")
+        elif self.st_marks>=420:
+            print("PERCENTAGE 80+")
+        elif self.st_marks>=360:
+            print("PERCENTAGE 70+")
+        elif self.st_marks>=310:
+            print("PERCENTAGE 60+")
+        elif self.st_marks>=260:
+            print("PERCENTAGE 50+")
+        else:
+            print("the student can not achive grade")
+            print("try again later!")
+        print(f"the student achive position  {self.st_positon}")    
+             
+class teachers(school): 
+    def __init__(self): 
+        pass
+        
+    def display2(self,t_name,t_expertsubject,t_contact,t_experience,t_scale,t_selary):
+        self.t_name=t_name
+        self.t_expertsubject=t_expertsubject
+        self.t_contact=t_contact
+        self.t_experience=t_experience
+        self.t_scale=t_scale
+        self.t_selary=t_selary
+        print("...................................................................")
+        print("...................................................................")
+        print("...................................................................")
+        print("<<<<<===---TEACHER DETAILS---===>>>>>")
+        print(f"the teacher name is {self.t_name}")
+        print(f"the teacher expert is {self.t_expertsubject}")
+        print(f"contact number is {self.t_contact}")
+        print(f"the teacher has {self.t_experience}  year experince")
+        print(f"teacher apoint by {self.t_scale} scale")
+        print(f"salary is {self.t_selary}")
+        
+        
+        
+class workingstaff(school):
+    def __init__(self): 
+        pass
+        
+        
+    def display3(self,sweeper_name,sweeper_age,sweeper_salary,nayebqasid_name,nayebqasid_age,nayebqasid_salary):
+        self.sweeper_name=sweeper_name
+        self.sweeper_age=sweeper_age
+        self.sweeper_salary=sweeper_salary
+        self.nayebqasid_name=nayebqasid_name
+        self.nayebqasid_age=nayebqasid_age
+        self.nayebqasid_salary=nayebqasid_salary
+        print("...................................................................")
+        print("...................................................................")
+        print("...................................................................")
+        print("=======((((working staff details))))==========")
+        print(f"the sweeper name  is  {self.sweeper_name } ")
+        print(f"the sweeper age is {self.sweeper_age}")
+        print(f"the sweeper salary has {self.sweeper_salary}")
+        print(f"the nayebqasid name  is  {self.nayebqasid_name } ")
+        print(f"the nayebqasid age  is  {self.nayebqasid_age} ")
+        print(f"the nayebqasid saary is  {self.nayebqasid_salary } ")
+        
+print(f">>>>>>>>>>>>>THE SCHOOL SYSTEM USING PYTHN CODE>>>>>>>>>>>>")      
+print("1.show school detail") 
+print("2.show student details")
+print("3.show teacher details ")  
+print("4.show employee detail")
+print("5.exit")
+
+
+s=school()
+choice=int(input("selecte your choice (1-5)"))
+
+if choice==1:
+    s.display()
+elif choice==2:
+    s=student()
+    st_name=input("enter a student name\t")
+    st_fathername=input("enter student fahter name\t")
+    st_permanentaddress=input("enter student permanent address\t")
+    st_residencialaddress=input("enter student residencial address\t")
+    st_class=input("enter which class student read\t")
+    st_marks=int(input("enter student marks\t"))
+    st_position=input("enter student achive position\t")
+    
+    s.display1(st_name,st_fathername,st_permanentaddress,st_residencialaddress,st_class,st_marks,st_position)
+elif choice==3:
+    s=teachers() 
+    t_name=input("enter your  teacher name\t")
+    t_expertsubject=input("teacher expert in which subject\t")
+    t_contact=int(input("enter your teacher contact numbers\t"))
+    t_experience=int(input("enter your teacher experience\t"))
+    t_scale=int(input("enter your teacher appointment scale\t"))
+    t_selary=input("enter your teacher salary\t")
+    s.display2(t_name,t_expertsubject,t_contact,t_experience,t_scale,t_selary)
+elif choice==4:
+    s=workingstaff()
+    sweeper_name=input("enter sweeper name\t")
+    sweeper_age=int(input("enter sweeper age\t"))
+    sweeper_salary=input("enter sweeper salary\t")
+    nayebqasid_name=input("enter   nayebqasid name\t ")
+    nayebqasid_age=int(input("enter nayeb qasid age\t"))
+    nayebqasid_salary=input("enter nayeb qasid salary\t")
+ 
+    s.display3(sweeper_name,sweeper_age,sweeper_salary,nayebqasid_name,nayebqasid_age,nayebqasid_salary)
+elif choice==5:
+    print("EXIT")
+else:
+    print("invalid choice")
+    print("try again later")
+
